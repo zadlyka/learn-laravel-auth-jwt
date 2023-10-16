@@ -40,6 +40,9 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+        'api' => [
+            'driver' => 'custom-token',
+        ],
     ],
 
     /*
@@ -112,4 +115,7 @@ return [
 
     'password_timeout' => 10800,
 
+    'jwt_key' => env('JWT_KEY', 123),
+
+    'jwt_ttl' => env('JWT_TTL', 60)
 ];

@@ -39,8 +39,6 @@ class Handler extends ExceptionHandler
                     'message' => $message
                 ], $statusCode);
             }
-
-            return parent::render($request, $e);
         });
     }
 }
